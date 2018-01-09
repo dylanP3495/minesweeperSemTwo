@@ -1,10 +1,16 @@
 #BlueJ class context
 comment0.target=MinesweeperBoard2
-comment0.text=\r\n\ Write\ a\ description\ of\ class\ MinesweeperBoard2\ here.\r\n\r\n\ @author\ (your\ name)\r\n\ @version\ (a\ version\ number\ or\ a\ date)\r\n
-comment1.params=
-comment1.target=MinesweeperBoard2()
-comment1.text=\r\n\ Constructor\ for\ objects\ of\ class\ MinesweeperBoard2\r\n
-comment2.params=y
-comment2.target=int\ sampleMethod(int)
-comment2.text=\r\n\ An\ example\ of\ a\ method\ -\ replace\ this\ comment\ with\ your\ own\r\n\r\n\ @param\ \ y\ \ a\ sample\ parameter\ for\ a\ method\r\n\ @return\ \ \ \ the\ sum\ of\ x\ and\ y\r\n
-numComments=3
+comment1.params=rows\ columns\ bombs
+comment1.target=MinesweeperBoard2(int,\ int,\ int)
+comment2.params=
+comment2.target=MinesweeperBoard2()
+comment3.params=bombs
+comment3.target=void\ addBombs(int)
+comment4.params=
+comment4.target=void\ addNums()
+comment5.params=
+comment5.target=void\ printBoard()
+comment5.text=\r\n\ This\ method\ is\ used\ for\ testing\ and\ will\ be\ deleted\ if\ using\ the\ GUI.\r\n\ \ It\ is\ still\ required\ for\ all\ students.\r\n
+comment6.params=
+comment6.target=javax.swing.JPanel\ addCells()
+numComments=7
