@@ -49,7 +49,7 @@ public class MinesweeperBoard2{
 
     public void addNums(){
         for (rows = 0; rows < board.length; rows++) {
-            for(columns = 0; columns < board.length; columns++){
+            for(columns = 0; columns < board[0].length; columns++){
                 
             }
             if (board.getValue() == -1 ){//bomb
@@ -117,7 +117,7 @@ public class MinesweeperBoard2{
 
     public JPanel addCells(){
         JPanel panel = new JPanel(new GridLayout(rows,columns));
-        for(int i = 0; i< (rows*columns); i++){
+        for(int i = 0; i< (); i++){
             board[i]= new Cell();
             panel.add(board[i].getButton());
         }
