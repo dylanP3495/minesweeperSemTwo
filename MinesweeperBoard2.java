@@ -12,8 +12,7 @@ import java.util.ArrayList;
 
 public class MinesweeperBoard2{
     Cell[][] board;
-    int rows;
-    int columns;
+
 
     public MinesweeperBoard2(int rows, int columns, int bombs){
         //Put the constructor here.
@@ -50,7 +49,8 @@ public class MinesweeperBoard2{
     public void addNums(){
         for (rows = 0; rows < board.length; rows++) {
             for(columns = 0; columns < board[0].length; columns++){
-                
+                    twoDimensionalArray[row][column] = num;
+                    num ++;
             }
             if (board.getValue() == -1 ){//bomb
                 //top left
