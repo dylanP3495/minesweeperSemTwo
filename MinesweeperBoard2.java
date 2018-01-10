@@ -99,7 +99,7 @@ public class MinesweeperBoard2{
     /**
      * This method is used for testing and will be deleted if using the GUI.
      *  It is still required for all students.
-     */
+     **/
     public void printBoard(){
         int x = 0;
         for (int i = 0; i < rows; i++){
@@ -109,7 +109,7 @@ public class MinesweeperBoard2{
                 }else{
                     System.out.print (board[x].getValue() + " ");
                 }
-                x++;
+                x++; 
             }
             System.out.println ();
         }
@@ -117,7 +117,7 @@ public class MinesweeperBoard2{
 
     public JPanel addCells(){
         JPanel panel = new JPanel(new GridLayout(rows,columns));
-        for(int i = 0; i< (); i++){
+        for(board = 0; board< board; board++){
             board[i]= new Cell();
             panel.add(board[i].getButton());
         }
