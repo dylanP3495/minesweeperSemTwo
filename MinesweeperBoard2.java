@@ -118,9 +118,9 @@ public class MinesweeperBoard2{
 
     public JPanel addCells(){
         JPanel panel = new JPanel(new GridLayout(rows,columns));
-        for(board = 0; board< board; board++){
-            board[i]= new Cell();
-            panel.add(board[i].getButton());
+        for(int i = 0; i<j ; i++){
+            board[i][j]= new Cell();
+            panel.add(board[i][j].getButton());
         }
         return panel;
     }
