@@ -105,10 +105,10 @@ public class MinesweeperBoard2{
         int x = 0;
         for (int i = 0; i < rows; i++){
             for (int j = 0; j < columns; j++){
-                if(board[x].getValue() == -1){
+                if(board[][].getValue() == -1){
                     System.out.print ("x" + " ");
                 }else{
-                    System.out.print (board[x].getValue() + " ");
+                    System.out.print (board[][].getValue() + " ");
                 }
                 x++; 
             }
@@ -118,9 +118,11 @@ public class MinesweeperBoard2{
 
     public JPanel addCells(){
         JPanel panel = new JPanel(new GridLayout(rows,columns));
-        for(int i = 0; i<j ; i++){
-            board[i][j]= new Cell();
-            panel.add(board[i][j].getButton());
+        for(int i = 0; i<0 ; i++){
+            for (int j = 0; j < 0; j++){
+                board[i][j]= new Cell();
+                panel.add(board[i][j].getButton());
+            }
         }
         return panel;
     }
