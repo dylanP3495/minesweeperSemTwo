@@ -3,7 +3,7 @@
  * Write a description of class Minesweeper here.
  * 
  * @author Dylan
- * @version 11.16.17
+ * @version 1.17.18
  */
 import java.lang.Math;
 import javax.swing.*;
@@ -36,7 +36,7 @@ public class MinesweeperBoard2{
         this (10,10,10);
     }
 
-      /**
+    /**
     public void addBombs(int bombs){// throws Exception{
     for (int i = 0; i < bombs; i++) {
 
@@ -100,16 +100,13 @@ public class MinesweeperBoard2{
 
     //This method is used for testing and will be deleted if using the GUI.
     //It is still required for all students.
-       */
+     */
     public void printBoard(){
         int x = 0;
-        for (int i = 0; i <= rows; i++){
-            for (int j = 0; j <= columns; j++){
-                if(board[i][j].getValue() == -1){
-                    System.out.print ("x" + " ");
-                }else{
-                    System.out.print (board[i][j].getValue() + " ");
-                }
+        for (int i = 0; i < rows; i++){
+            for (int j = 0; j < columns; j++){
+                //System.out.print ("x" + " ");
+                System.out.print (board[i][j].getValue() + " ");
                 x++; 
             }
             System.out.println ();
