@@ -37,7 +37,7 @@ import java.awt.event.ActionListener;
 
 public class Cell implements ActionListener{
     //Variables you need to work with
-    private int value;
+    public int value;
 
     //Variables you don't need to worry about or care about.
     private JButton button;
@@ -60,7 +60,7 @@ public class Cell implements ActionListener{
         value = newValue;
     }
 
-    public void addValue(){
+    public void incrementValue(){
         if (value != -1){
             value++;   
         }

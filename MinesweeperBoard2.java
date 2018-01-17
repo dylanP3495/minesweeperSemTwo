@@ -36,71 +36,70 @@ public class MinesweeperBoard2{
         this (10,10,10);
     }
 
-    
     public void addBombs(int bombs){// throws Exception{
-    for (int i = 0; i < bombs; i++) {
+        for (int i = 0; i < bombs; i++) {
 
-    if(board.getValue() == -1 ){
-    i--;
-    }else{
-    board.setValue(-1);
-    }
-    }
-    }
-
-    public void addNums(){
-    for (rows = 0; rows < board.length; rows++) {
-    for(columns = 0; columns < board[0].length; columns++){
-    twoDimensionalArray[row][column] = num;
-    num ++;
-    }
-    if (board.getValue() == -1 ){//bomb
-    //top left
-    if ((a >= columns) && (a % columns != 0) ){
-    board[a - columns -1].addValue();
+            if(board.getValue() == -1 ){
+                i--;
+            }else{
+                board.setValue(-1);
+            }
+        }
     }
 
-    // top bound
-    if (a >= columns){
-    board[a - columns].addValue();
-    }
+   /** public void addNums(){
+        for (rows = 0; rows < board.length; rows++) {
+            for(columns = 0; columns < board[0].length; columns++){
+                twoDimensionalArray[row][column] = num;
+                num ++;
+            }
+            if (board.getValue() == -1 ){//bomb
+                //top left
+                if ((a >= columns) && (a % columns != 0) ){
+                    board[a - columns -1].incrementValue();
+                }
 
-    // top right
-    if ((a >= columns) && (a % columns != (columns - 1))){
-    board[a - columns + 1].addValue();
-    }
+                // top bound
+                if (a >= columns){
+                    board[a - columns].incrementValue();
+                }
 
-    // left bound
-    if ((a % columns != 0)){
-    board[a - 1].addValue();
-    }
+                // top right
+                if ((a >= columns) && (a % columns != (columns - 1))){
+                    board[a - columns + 1].incrementValue();
+                }
 
-    // right bound
-    if (a % columns != (columns - 1)){
-    board[a + 1].addValue();
-    }
+                // left bound
+                if ((a % columns != 0)){
+                    board[a - 1].incrementValue();
+                }
 
-    // bot left
-    if ((a <= ((rows-1) * columns)) && (a % columns != 0)){
-    board[a + columns - 1].addValue();
-    }
+                // right bound
+                if (a % columns != (columns - 1)){
+                    board[a + 1].incrementValue();
+                }
 
-    // bot bound
-    if (a < ((rows-1) * columns)){
-    board[a + columns].addValue();
-    }
+                // bot left
+                if ((a <= ((rows-1) * columns)) && (a % columns != 0)){
+                    board[a + columns - 1].incrementValue();
+                }
 
-    // bot right
-    if (a < ((rows - 1) * columns) && (a % columns !=(columns - 1))){
-    board[a + columns + 1].addValue();
-    }
-    }
-    }
-    }
+                // bot bound
+                if (a < ((rows-1) * columns)){
+                    board[a + columns].incrementValue();
+                }
 
+                // bot right
+                if (a < ((rows - 1) * columns) && (a % columns !=(columns - 1))){
+                    board[a + columns + 1].incrementValue();
+                }
+            }
+        }
+    }
+*/
     //This method is used for testing and will be deleted if using the GUI.
     //It is still required for all students.
-     
+
     public void printBoard(){
         int x = 0;
         for (int i = 0; i < rows; i++){
