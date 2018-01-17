@@ -36,7 +36,7 @@ public class MinesweeperBoard2{
         this (10,10,10);
     }
 
-    /**
+    
     public void addBombs(int bombs){// throws Exception{
     for (int i = 0; i < bombs; i++) {
 
@@ -100,7 +100,7 @@ public class MinesweeperBoard2{
 
     //This method is used for testing and will be deleted if using the GUI.
     //It is still required for all students.
-     */
+     
     public void printBoard(){
         int x = 0;
         for (int i = 0; i < rows; i++){
